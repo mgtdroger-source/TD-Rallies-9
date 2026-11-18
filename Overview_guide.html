@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="TD_simple.ico" rel="icon" type="image/x-icon"/>
+<title>From Route to Results | Overview v0.05</title>
+<style>
+:root{--td-blue:#0070c0;--td-text:#152238;--td-muted:#536477;--td-line:#e3e9ef;--td-soft:#f5f8fb}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;color:var(--td-text)}
+body{font:14.5px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+main{max-width:980px;margin:34px auto;padding:0 28px 56px}
+h1{font-size:29px;line-height:1.18;color:var(--td-blue);margin:0 0 9px}
+h2{font-size:20px;color:var(--td-blue);margin:29px 0 10px;line-height:1.25}
+h3{font-size:16px;margin:18px 0 7px;color:#173c60}
+p{margin:0 0 11px}ul,ol{margin:0 0 13px 22px;padding:0}li{margin:0 0 6px}
+.lead{font-size:16px;color:#283c52;max-width:880px}.muted{color:var(--td-muted)}
+.section-intro{color:var(--td-muted);margin-bottom:17px}
+.part{border-top:2px solid var(--td-line);margin-top:34px;padding-top:2px}
+.part-label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;font-weight:750;color:#58758d;margin-top:20px}
+.cue-orange{color:#de7900;font-weight:750}.cue-red{color:#d82222;font-weight:750}.cue-blue{color:#0070c0;font-weight:750}.cue-black{color:#111;font-weight:750}
+.btn{display:inline-block;padding:2px 8px;border-radius:5px;background:#2d6cdf;color:#fff;font-weight:700;font-size:.85em;white-space:nowrap}
+.btn.green{background:#2e8b57}.btn.grey{background:#808080}
+.note{padding:11px 14px;border-left:3px solid var(--td-blue);background:var(--td-soft);margin:14px 0 16px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:14px 0}
+.small-card{border:1px solid var(--td-line);border-radius:8px;padding:13px 15px;background:#fafcfe}
+.small-card h3{margin:0 0 6px}
+.steps{counter-reset:step;list-style:none;margin:0;padding:0}
+.steps>li{counter-increment:step;position:relative;padding:0 0 12px 40px;margin:0 0 6px;border-left:1px solid #dce7f0}
+.steps>li::before{content:counter(step);position:absolute;left:-14px;top:0;border-radius:50%;width:27px;height:27px;display:grid;place-items:center;background:#e9f3fc;color:#0865aa;font-weight:750}
+.steps>li:last-child{border-left-color:transparent}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:19px 0}
+.toc a{font-size:13px;color:#fff;background:#0070c0;text-decoration:none;border:1px solid #0070c0;border-radius:99px;padding:8px 14px;font-weight:650;display:inline-block;transition:background-color .15s,border-color .15s}
+.toc a:hover,.toc a:focus-visible{background:#005b9c;border-color:#005b9c;text-decoration:none}
+.toc a:focus-visible{outline:2px solid #003e73;outline-offset:3px}
+.toc-label{font-size:14px;font-weight:700;color:var(--td-text);margin:18px 0 -9px}
+.rule{border-top:1px solid var(--td-line);margin:25px 0 0}
+a{color:#0065aa}
+footer{font-size:12px;color:var(--td-muted);margin-top:35px;border-top:1px solid var(--td-line);padding-top:12px}
+@media(max-width:650px){main{padding:0 18px 36px;margin:22px auto}.two-col{grid-template-columns:1fr}h1{font-size:25px}}
+@media print{main{margin:0;max-width:none;padding:0}.toc{display:none}.part{break-before:auto}.small-card,.note{break-inside:avoid}a{color:inherit;text-decoration:none}}
+</style>
+</head>
+<body>
+<main>
+<h1>TD Rallies — From Route to Results</h1>
+<h2>Introduction</h2>
+<p>Time and Distance Rallies is an integrated rally planning and results system. It supports rallies of up to seven days, with up to four speed groups, optionally two routes on a rally day. Rally Controls can be physical or virtual Marshals, Open Controls and Self Timed Controls (STC's) at which entrants record their elapsed rally time when passing a defined location.</p>
+<p>Competitor entries can be gathered using Google forms saving a lot of typing. On a rally day entrant timings are shared either via Google forms or mobile apps enabling results to be processed and presented with minimal effort. All the necessary tools are integrated into TD Rallies.</p>
+<p>Only basic computer skills are needed. TD Rallies guides you through the main tasks, with detailed Help available when required.</p>
+
+<p class="toc-label">Jump to a section</p>
+<div aria-label="Guide sections" class="toc"><a href="#story">From route to results</a><a href="#basics">The basics</a><a href="#options">More possibilities</a><a href="#guides">Where to find help</a></div>
+<section class="part" id="story">
+<p class="part-label">Part 1 · The organiser's journey</p>
+<h2>From route to results</h2>
+<p class="section-intro">The following five stages show how TD Rallies supports the work of organising a rally. The second part of this guide introduces what you will actually see on each page.</p>
+<h3>1. Every rally begins with a route</h3>
+<p>As an organiser you probably already have a good idea of where you want the rally to go. TD Rallies gives you a choice of how to turn that idea into a route schedule.</p>
+<p>You can enter route instructions and distances directly in <strong>Schedule</strong>, or build the route on the <strong>Mapping</strong> page, you can also gather waypoints, control positions and distances in the field with the GPS-based <strong>Rally Field Tool</strong>. Field data can be brought into Mapping for refinement before the route is imported into Schedule.</p>
+<p>There is no requirement to begin with GPS mapping; use the method that best suits you.</p>
+<h3>2. Getting your rally underway</h3>
+<p>While developing the route, you can get the entry process underway. In <strong>Admin</strong>, give the rally a title, establish a workspace for saving your work, and set the rally days, dates, starting times and speed groups.</p>
+<p>Entries can be entered manually. Alternatively, the one-time Google connection allows you to share an entry form and download completed entries directly into the Admin page, saving a lot of typing. Before the rally, entrants can be sorted into speed groups and the starting order and start times established.</p>
+<h3>3. Developing the rally schedule</h3>
+<p>With a route in place, Schedule brings together distances, instructions, speeds, Added Time and controls. As you choose the speed for each section and speed group, ETA times are calculated automatically.</p>
+<p>Adding an STC, Marshal, Open Control or Start STC also prepares the corresponding ordered cards in <strong>Controls</strong>. The optional <strong>Timeline</strong> gives a visual view of how speed groups and entrants progress along the route, helping you consider spacing, start delays and breaks.</p>
+<p>The result is a schedule ready for checking and printing.</p>
+<h3>4. Getting ready for rally day</h3>
+<p>Decide how control times will be collected. Physical marshals can return their times using Google forms, while entrants can submit STC times using forms or the <strong>Rally Recorder app</strong>.</p>
+<p>The Recorder link if shared in <strong>Button mode</strong>, the entrant records STC times by pressing a button at a location. GPS location based timings are also recorded in the background for later audit review. Both STC and Virtual marshal times are recorded in this way. In <strong>GPS mode</strong>, there are no buttons to be pushed, times are gathered automatically based on GPS location. Tracking is another optional choice if the organiser wants to monitor entrant progress during the event.</p>
+<p>When preparations are final, upload the day's Controls data and share the appropriate daily forms and Rally Recorder links.</p>
+<h3>5. Running the rally and producing results</h3>
+<p>During the rally, entrants and marshals record or submit their times using the selected methods. The organiser can optionally follow entrants through <strong>Tracking</strong>, either on the desktop or using the organiser's Tracking PWA on a mobile device.</p>
+<p>After the rally, review the returned times and download them into Controls. Expected and actual times are compared, penalties are calculated, and the organiser or Clerk of the Course can audit results, apply additional penalties or exclude a control where appropriate. Results can then be printed or exported.</p>
+</section>
+<section class="part" id="basics">
+<p class="part-label">Part 2 · Getting comfortable with TD Rallies</p>
+<h2>The basics — what you will see and use</h2>
+<p class="section-intro">These introductions give you enough familiarity to explore each page. The individual guides explain the detailed procedures.</p>
+<h3>Admin — the rally and its entrants</h3>
+<p>Begin by entering the rally title. Set the days and dates (up to seven), start times, starting interval and speed groups (up to four). Each rally day can use one or two routes. Use <span class="btn green">Tools</span> to establish the Rally Workspace, where your project files are saved.</p>
+<ul>
+<li><span class="btn">Entries</span> opens the Google setup and entry-management card. Complete the Google connection once, then upload entry details and share the entry form if you want online entries.</li>
+<li>Use <span class="btn">Download entry data</span> to populate the entrant table when entries arrive, or enter details manually.</li>
+<li><span class="btn grey">Sort</span> arranges the entrants into starting order by speed group. Rally numbers and their start-time positions remain fixed as entrants are sorted. Start Delays can be included for a day where required.</li>
+<li><span class="btn">Save</span> and <span class="btn">Load</span> work with the entire rally project, not just Admin. Saving before major changes or uploads is good practice.</li>
+</ul>
+<h3>Schedule — instructions, speeds and times</h3>
+<p>Select the required day and route. Use <span class="btn green">ADD ROW</span> to add instructions, control points or Added Time, or choose <strong>Import Mapped Route</strong> when a route has been prepared in Mapping.</p>
+<ul>
+<li><span class="btn green">ADD ROW</span> opens a menu for adding instructions, STCs, Marshals, Open Controls, Start STCs or Added Time. Controls included in Schedule automatically create the corresponding cards in Controls.</li>
+<li><strong>Distances and speeds:</strong> New values have an <span class="cue-orange">orange ring</span>, which clears once edited or confirmed. A <span class="cue-red">red error border</span> flags a distance lower than the preceding row.</li>
+<li><strong>Colours and printing:</strong> <span class="cue-blue">Blue text</span> indicates calculated or non-editable information. <span class="cue-black">Black text</span> is normally editable and printed. <span class="cue-red">Red text</span> is excluded from normal print. Distance and time tick boxes turn selected values <span class="cue-red">red</span>; unchanged speeds are also suppressed automatically.</li>
+<li><strong>Speed Groups:</strong> Select a group in the button panel to display its speed and time card. Each group can have its own speeds and timings. If a row's time is excluded from print, the corresponding speed-group times are excluded too.</li>
+<li><strong>Added Time:</strong> Allowances for traffic lights or stops can be set independently for each speed group. The row includes a reason selector.</li>
+<li><strong>Turn column:</strong> Choose turn abbreviations in the final column. Click the <strong>Turn</strong> heading to exclude that column from print; its text becomes <span class="cue-red">red</span>.</li>
+<li><span class="btn">Timeline</span> shows the movement and spacing of speed groups along the route. Before entrant details are finalised, use <strong>Cars/SG</strong> for planning. Start Delays can be explored in Timeline and applied to that rally day using <strong>Include Start Delays</strong> in Admin.</li>
+</ul>
+<p class="muted">A Start STC establishes a fresh timing reference: Schedule displays 00:00:00 at that point. See the Schedule and Controls guides for the timing details.</p>
+<h3>Mapping — an optional route-building tool</h3>
+<p>Mapping lets you develop the route on a map, adding waypoints and controls in driving order. You can inspect locations using map and street-view tools, add route-shaping breadcrumbs, and import surveyed positions from the Rally Field Tool.</p>
+<ul>
+<li>Save each map to its day and route folder. When the route is ready, import the saved map into the matching Schedule.</li>
+<li>Changes to mapped control positions are made in Mapping and re-imported into Schedule.</li>
+<li>For STCs and Virtual Marshals, <strong>trip lines are recommended for best timing accuracy</strong>, but they are optional: the Rally Recorder can use GPS radius detection when a trip line is not defined.</li>
+<li>Mapping includes distance calibration, allowing calculated route distances to be adjusted against a preferred measured reference.</li>
+<li>The Rally Field Tool also supports checking a prepared route against distances and points measured during a drive.</li>
+</ul>
+<h3>Controls — times and results</h3>
+<p>Controls displays the entrants and the STC, Marshal, Open Control and Start STC cards created by Schedule. <strong>ETA</strong> is the calculated expected arrival time; <strong>ATA</strong> is the recorded actual time. You can enter times directly or download submitted times from Google.</p>
+<ul>
+<li>Select an entrant's <strong>rally number</strong> to review or enter that entrant's control times together.</li>
+<li><span class="btn">Controls data</span> prepares the day's online forms and Rally Recorder links. The organiser chooses the timing mode and whether Virtual Marshals or Tracking are used.</li>
+<li>After timing returns have been checked, select <span class="btn">Download controls data</span>. The results update automatically.</li>
+<li>Use the <strong>Audit</strong> facility to identify unusual errors. Controls may be excluded from scoring where appropriate; Clerk of the Course penalties can also be added.</li>
+<li><span class="btn">Print</span> lets you select a report and, where applicable, how it is sorted. Results can also be exported to a spreadsheet.</li>
+</ul>
+<div class="note"><strong>Important:</strong> uploading Controls data again can clear timing returns for that day in Google. Review and download any results you need to keep, and save the rally project before rebuilding the day's data.</div>
+<h3>Tracking — optional monitoring</h3>
+<p>When enabled in Controls, Rally Recorder can send periodic entrant GPS positions during the rally. The <strong>Tracking</strong> page shows the last reported positions on the event map, while <strong>Event Replay</strong> lets the organiser review previously recorded movements.</p>
+<p>The organiser can also use the <strong>Tracking PWA</strong> to view progress on a mobile device. This PWA is for monitoring entrants; it is not a separate recording app that entrants must install.</p>
+<p class="muted">A displayed position is the last one received, not proof of an entrant's exact present location.</p>
+</section>
+<section class="part" id="options">
+<p class="part-label">Part 3 · Explore when useful</p>
+<h2>More possibilities, at your pace</h2>
+<div class="two-col">
+<div class="small-card"><h3>Two-route rallies</h3><p>Run two different routes on the same rally day, with entrants allocated to either route. Schedule and Mapping keep the routes separate while Controls calculates results for each entrant's assignment. Both routes must have matching control arrangements.</p></div>
+<div class="small-card"><h3>Rally Recorder choices</h3><p>Use the PWA on a compatible phone, or the installed Android Recorder. Button and GPS modes, Virtual Marshals and optional Tracking allow organisers to choose how much timing work is automated.</p></div>
+<div class="small-card"><h3>Field verification</h3><p>Use the Rally Field Tool to survey locations, check the route in the field and compare measured distances with mapped distances before finalising the Schedule.</p></div>
+<div class="small-card"><h3>Dashboard at a glance</h3><p>The Dashboard brings together summaries of Admin, Schedule and Controls, including entries, rally-day distances and timings, and control-data activity.</p></div>
+</div>
+<p>These facilities are available when they help your event. A straightforward single-route rally with manually entered results is also a perfectly valid way to use TD Rallies.</p>
+</section>
+<section class="part" id="guides">
+<p class="part-label">Where to go next</p>
+<h2>Detailed guides when you need them</h2>
+<p>The individual <strong>Admin, Schedule, Controls, Mapping and Tracking</strong> guides provide the step-by-step instructions behind the features introduced here. The <strong>Google Setting Up Guide</strong>, available through the Admin Entries card, covers the initial Google connection.</p>
+<p>Begin with Admin to create the rally and workspace, then use the other pages as your plans develop. There is no need to learn the whole system before starting.</p>
+</section>
+<footer>TD Rallies Overview · Review edition v0.05 · From Route to Results</footer>
+</main>
+</body>
+</html>
